@@ -185,6 +185,10 @@ $$
 
 ---
 
+## Blank slide
+
+---
+
 
 ## Solution Methods
 
