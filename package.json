@@ -1,10 +1,10 @@
 {
-  "name": "DFD 25",
+  "name": "DFD_25",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /DFD_25/",
     "dev": "slidev --open",
+    "build": "slidev build --base /DFD_25/",
     "export": "slidev export"
   },
   "dependencies": {
@@ -17,3 +17,4 @@
     "playwright-chromium": "^1.53.2"
   }
 }
+
