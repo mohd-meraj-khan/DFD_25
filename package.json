@@ -1,9 +1,9 @@
 {
-  "name": "seminar_2",
+  "name": "DFD 25",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /DFD_25",
     "dev": "slidev --open",
     "export": "slidev export"
   },
