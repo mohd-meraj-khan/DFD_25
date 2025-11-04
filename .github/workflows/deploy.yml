@@ -30,9 +30,11 @@ jobs:
       - name: Install dependencies
         run: nci
 
-      - name: Build
-        # this uses 'nr' (antfu/nr) runner which reads package.json scripts
+      - name: Build Slidev presentation
         run: nr build --base /${{ github.event.repository.name }}/
+
+      - name: Add 404 page
+        run: cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
