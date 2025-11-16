@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: /comet_tail.jpg
 # some information about your slides (markdown enabled)
-title: Seminar II
+title: DFD 25
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
