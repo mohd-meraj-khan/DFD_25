@@ -110,13 +110,19 @@ layout: default
   </figure>
 
   <!-- Dust storm -->
-  <figure v-click="3" class="flex flex-col items-center">
-    <img src="/figures/dust_storm.png" class="w-[75%] h-auto rounded shadow" />
-    <figcaption class="text-3 mt-3 leading-tight text-center">
-      Dust storm
-      <div class="text-2 opacity-70 mt-1">(Source: icarda.org)</div>
-    </figcaption>
-  </figure>
+<div v-click="3"class="absolute bottom-12 right-12 w-80 text-3.75 leading-relaxed text-left">
+
+  <ul class="list-disc ml--15 space-y-2 text-left">
+    <li>Radiation pressure shapes comet tails</li>
+    <li>Enables optical trapping & manipulation</li>
+    <li>Foundation of optical tweezers</li>
+    <li>Drives micro/nano-particle transport & self-assembly</li>
+    <li>Applications in targeted drug delivery</li>
+  </ul>
+
+</div>
+
+
 
 </div>
 
