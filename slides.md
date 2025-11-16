@@ -279,7 +279,7 @@ $$
 <div v-click="7" absolute inset-0  >
 <figure class="text-center item-center">
   <video autoplay loop muted class="w-11/12 h-auto">
-    <source src="/figures/rad_force/lattice_boltzmann.mp4" type="video/mp4">
+    <source src="/figures/lattice_boltzmann.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </figure>
