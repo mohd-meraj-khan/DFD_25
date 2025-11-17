@@ -358,8 +358,8 @@ $$
 $$
 \alpha_m =
 \begin{cases}
-0, & \text{if } m = 1, \\
-0, & \text{otherwise.}
+1, & \text{if } m = 1, \\
+2, & \text{otherwise.}
 \end{cases}
 $$
 </div>
