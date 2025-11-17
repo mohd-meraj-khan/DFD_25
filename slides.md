@@ -169,6 +169,10 @@ layout: default
 
 
 
+<div class="abs-br m-2 text-3">
+  <SlideCurrentNo />
+</div>
+
 ---
 
 # Maxwell–LBM Computational Framework
