@@ -706,10 +706,8 @@ Dynamic model
 
 <div class="grid grid-cols-[35%_65%] gap-4 items-center justify-center mt-0">
 
-  <!-- Left column: Video -->
-
-
-  <!-- Right column: Equations -->
+  
+  
 <div class="flex flex-col items-center text-center space-y-6">
 
 <p class="text-lg mb-2">Instantaneous Force and Torque Balances</p>
@@ -749,7 +747,7 @@ $$
 
 <div v-click="2" class="flex flex-col  h-full">
 
-<div v-click="1" class="text-4">
+<div class="text-4">
 $$
 \tilde{t}_f = 10,000 \quad \quad\tilde{t} = t/T_0 \quad \quad   T_0 = \frac{2 c }{\pi} \frac{\eta}{I}
 $$
@@ -769,7 +767,7 @@ $$
 
 
 
-<v-drag pos="749,26,70,_">
+<v-drag v-click="1" pos="749,26,70,_">
 <div  class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 1
@@ -778,7 +776,7 @@ $$
 </v-drag>
 
 
-<v-drag pos="809,-5,181,_">
+<v-drag v-click="1" pos="809,-5,181,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic_PEC.svg" alt="Image 2" class="w-full h-auto">
 </figure>
