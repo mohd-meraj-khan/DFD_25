@@ -358,7 +358,7 @@ $$
 $$
 \alpha_m =
 \begin{cases}
-1, & \text{if } m = 1, \\
+1, & \text{if } m = 0, \\
 2, & \text{otherwise.}
 \end{cases}
 $$
@@ -366,7 +366,7 @@ $$
 </v-drag>
 
 <v-drag pos="504,390,55,_">
-<div v-click="1"  class="text-3 text-left">
+<div v-click="2"  class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 5
 $$
@@ -376,7 +376,7 @@ $$
 
 
 <v-drag pos="603,346,237,_">
-<div v-click="1" class="mt-3">
+<div v-click="2" class="mt-3">
   <figure class="text-center">
     <img src="/figures/RCS_5.svg" alt="Image 1" class="w-auto h-auto">
   </figure>
@@ -391,7 +391,7 @@ $$
 
 
 <v-drag pos="665,494,157,_">
-<div v-click="1"  class="text-3 text-left">
+<div v-click="2"  class="text-3 text-left">
 $$
 \theta = \text{scattering angle}
 $$
@@ -400,7 +400,7 @@ $$
 
 
 <v-drag pos="470,475,157,_">
-<div v-click="1"  class="text-3 text-left">
+<div v-click="2"  class="text-3 text-left">
 $$
 \sigma = \lim_{r \to \infty} 2 \pi r \frac{|\mathbf{E}^S|^2}{|\mathbf{E}^I|^2}
 $$
