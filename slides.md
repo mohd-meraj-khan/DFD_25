@@ -253,12 +253,12 @@ $$
 <div class="flex justify-between items-center text-2.75 mt--5">
 <div v-click='4' class="text-center mx-0">
 $$
-f_i^* (\mathbf{x}, t) = f_i (\mathbf{x}, t) + \frac{\Delta t}{\tau} \left[f_i^{eq} (\mathbf{x}, t) - f_i (\mathbf{x}, t) \right]
+f_i^* (\mathbf{r}, t) = f_i (\mathbf{r}, t) + \frac{\Delta t}{\tau} \left[f_i^{eq} (\mathbf{r}, t) - f_i (\mathbf{r}, t) \right]
 $$
 </div>
 <div v-click='5' class="text-center mx-5">
 $$
-f_i (\mathbf{x} + \mathbf{c}_i \Delta t, t + \Delta t) = f_i^* (\mathbf{x}, t)
+f_i (\mathbf{r} + \mathbf{c}_i \Delta t, t + \Delta t) = f_i^* (\mathbf{r}, t)
 $$
 </div>
 </div>
