@@ -913,18 +913,44 @@ $$
 
 # Thank You
 
+<div class="grid grid-cols-2 gap-12 items-center mt-10">
+
+  <!-- LEFT: Advisor photos (small) -->
+<div class="flex flex-row justify-center space-x-12">
 
 
-<div class="flex flex-col items-center mt-6">
+<figure class="text-center">
+  <img src="/figures/Anubhab.jpg" class="w-auto h-32 shadow-md" />
+  <figcaption class="text-sm mt-2 opacity-80">
+    Prof. Anubhab Roy
+  </figcaption>
+</figure>
 
-  <!-- Replace this with your QR code -->
-  <img src="/figures/QR_github.png" class="w-4/9 h-auto mb-0 rounded shadow-lg"/>
+<figure class="text-center">
+  <img src="/figures/sumesh.jpeg" class="w-auto h-32 shadow-md" />
+  <figcaption class="text-sm mt-2 opacity-80">
+    Prof. Sumesh P. Thampi
+  </figcaption>
+</figure>
 
-  <p class="text-sm opacity-80 text-center">
-    Scan for code and paper
-  </p>
+
 
 </div>
+
+  <!-- RIGHT: Big QR Code -->
+  <div class="flex flex-col items-center">
+    <img src="/figures/QR_github.png" class="w-7/8 h-auto shadow-xl" />
+    <p class="text-base opacity-80 text-center mt-4">
+      Scan for code and paper
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
 
 
 ---
