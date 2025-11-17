@@ -28,35 +28,41 @@ slideNumber: true
 # Radiation Forces and Torque on Dielectric Janus Particles
 
 <div class="mt-4 text-center leading-relaxed">
-  <span class="text-l font-semibold">Mohd Meraj Khan</span>,
-  <span class="text-l">Sumesh P. Thampi</span>
+  <span class="text-l font-semibold">Mohd Meraj Khan<sup>a</sup></span>,
+  <span class="text-l">Sumesh P. Thampi<sup>b</sup></span>
   and
-  <span class="text-l">Anubhab Roy</span>
+  <span class="text-l">Anubhab Roy<sup>a</sup></span>
 </div>
 
-<!--
+
 <div class="mt-5 text-3.5 leading-tight text-center">
-  <sup class="text-sm align-super">a</sup> Department of Applied Mechanics, IIT Madras<br>
-  <sup class="text-sm align-super">b</sup> Department of Chemical Engineering, IIT Madras
+  <sup class="text-3.5 align-super">a</sup> Department of Applied Mechanics<br>
+  <sup class="text-3.5 align-super">b</sup> Department of Chemical Engineering
 </div>
--->
 
 
-<div class="text-l leading-tight text-center mt-15 mb-15">
+
+<div class="text-l leading-tight text-center mt-5 mb-5">
   78th APS Division of Fluid Dynamics
 </div>
 
 
 
 
-<div class="mt-3 flex justify-center items-center">
+<div class="my-10 flex justify-center items-center">
   <img src="/figures/IITM_Logo.png" alt="IIT Madras logo" class="h-24 w-24 opacity-90">
 </div>
 
+<div class="mt-4 text-4 text-center ">
+  Indian Institute of Technology Madras, Chennai, India
+</div>
+
+<!--
 <div class="mt-4 text-sm text-center ">
   Fluid Mechanics Division, Department of Applied Mechanics and Biomedical Engineering<br>
   Indian Institute of Technology Madras, Chennai, India — 600036
 </div>
+-->
 
 
 
@@ -420,7 +426,7 @@ Radiation force and torque validation
 
 
 
-<div v-click="1" class="grid grid-cols-3 gap-0 mt-5 ml-15">
+<div class="grid grid-cols-3 gap-0 mt-5 ml-15">
   <figure class="text-center">
     <img src="/figures/Fx_LBM_Hurd.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
@@ -436,11 +442,11 @@ Radiation force and torque validation
 
 
 
-<div v-click="2" class="text-center text-4 mb-0 mt-0">
+<div v-click="1" class="text-center text-4 mb-0 mt-0">
   Percentage error
 </div>
 
-<div v-click="2" class="grid grid-cols-3 gap-0 mt-0 ml-15">
+<div v-click="1" class="grid grid-cols-3 gap-0 mt-0 ml-15">
   <figure class="text-center">
     <img src="/figures/Fx_Hurd_Per_Err.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
@@ -455,7 +461,7 @@ Radiation force and torque validation
   
 </div>
 
-<v-drag v-click="1" pos="-23,233,163,_">
+<v-drag pos="-23,233,163,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic_PEC.svg" alt="Image 2" class="w-full h-auto">
 </figure>
@@ -464,7 +470,7 @@ Radiation force and torque validation
 
 
 <v-drag pos="755,43,195,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 F_0 = \frac{\pi}{2 c} I a \quad M_0 = 2 F_0 a
 $$
@@ -476,7 +482,7 @@ $$
 
 
 <v-drag pos="221,97,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{F}_x \rangle
 $$
@@ -484,7 +490,7 @@ $$
 </v-drag>
 
 <v-drag pos="487,94,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{F}_y \rangle
 $$
@@ -492,7 +498,7 @@ $$
 </v-drag>
 
 <v-drag pos="762,95,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{M}_z \rangle
 $$
@@ -509,7 +515,7 @@ $$
 
 # Radiation Force Landscapes
 
-<div v-click="1" class="grid grid-cols-3 gap-2 mt-8 ml-10">
+<div class="grid grid-cols-3 gap-2 mt-8 ml-10">
   <figure class="text-center">
     <img src="/figures/Fx_Janus_er_1.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
@@ -523,7 +529,7 @@ $$
   </figure>
 </div>
 
-<div v-click="2" class="grid grid-cols-3 gap-2 mt-5 ml-10">
+<div v-click="1" class="grid grid-cols-3 gap-2 mt-5 ml-10">
   <figure class="text-center">
     <img src="/figures/Fx_Janus_er_2.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
@@ -540,7 +546,7 @@ $$
 
 
 <div
-  v-click="3"
+  v-click="2"
   class="absolute inset-0 flex justify-center items-center pointer-events-none"
 >
   <div
@@ -561,7 +567,7 @@ $$
 
 
 <v-drag pos="745,19,195,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 F_0 = \frac{\pi}{2 c} I a \quad M_0 = 2 F_0 a
 $$
@@ -571,7 +577,7 @@ $$
 
 
 <v-drag pos="200,72,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{F}_x \rangle
 $$
@@ -579,7 +585,7 @@ $$
 </v-drag>
 
 <v-drag pos="479,73,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{F}_y \rangle
 $$
@@ -587,7 +593,7 @@ $$
 </v-drag>
 
 <v-drag pos="760,71,53,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \langle \vec{M}_z \rangle
 $$
@@ -595,7 +601,7 @@ $$
 </v-drag>
 
 <v-drag pos="21,143,60,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 1
 $$
@@ -603,7 +609,7 @@ $$
 </v-drag>
 
 <v-drag pos="22,378,53,_">
-<div v-click="2"  class="text-3 text-left">
+<div v-click="1"  class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 2
 $$
@@ -613,7 +619,7 @@ $$
 
 
 <v-drag pos="906,238,53,_">
-<div v-click="3"  class="text-3 text-left">
+<div v-click="2"  class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 5
 $$
@@ -622,7 +628,7 @@ $$
 
 
 
-<v-drag v-click="1" pos="-21,225,139,_">
+<v-drag pos="-21,225,139,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic.svg" alt="Image 2" class="w-full h-auto">
 </figure>
@@ -643,14 +649,14 @@ $$
   
 <div class="flex flex-col items-center text-center space-y-30 text-xl leading-relaxed">
 
-<div v-click="1" class="text-center text-xl">
+<div class="text-center text-xl">
 
 All parameters fixed, except the  
 orientation angle $\phi_0$
 
 </div>
 
-<div v-click="2" class="text-center text-xl mt-10">
+<div v-click="1" class="text-center text-xl mt-10">
 
 All parameters fixed, except the  
 dielectric contrast ratio $\varepsilon_{r_2}/\varepsilon_{r_1}$
@@ -667,10 +673,10 @@ dielectric contrast ratio $\varepsilon_{r_2}/\varepsilon_{r_1}$
 <div class="flex flex-col h-full mt--15">
 
   <div class="grid grid-cols-2 grid-rows-2 gap-2 place-items-center">
-    <img v-click="1" src="/figures/EzScat_er1_5_er2er1_4_phi_1.svg" class="w-full h-auto rounded-lg" />
-    <img v-click="1" src="/figures/EzScat_er1_5_er2er1_4_phi_66.svg" class="w-full h-auto rounded-lg" />
-    <img v-click="2" src="/figures/EzScat_er1_5_er2er1_3.60_phi_90.svg" class="w-full h-auto rounded-lg" />
-    <img v-click="2" src="/figures/EzScat_er1_5_er2er1_3.66_phi_90.svg" class="w-full h-auto rounded-lg" />
+    <img src="/figures/EzScat_er1_5_er2er1_4_phi_1.svg" class="w-full h-auto rounded-lg" />
+    <img src="/figures/EzScat_er1_5_er2er1_4_phi_66.svg" class="w-full h-auto rounded-lg" />
+    <img v-click="1" src="/figures/EzScat_er1_5_er2er1_3.60_phi_90.svg" class="w-full h-auto rounded-lg" />
+    <img v-click="1" src="/figures/EzScat_er1_5_er2er1_3.66_phi_90.svg" class="w-full h-auto rounded-lg" />
   </div>
 
 </div>
@@ -838,20 +844,20 @@ $$
   </figure>
   
   <figure class="text-center">
-    <img src="/figures/DJC_Trajectory_er_2_er2byer1_2.svg" alt="Image 2" class="w-full h-auto">
+    <img src="/figures/DJC_Trajectory_er_2_er2byer1_3.svg" alt="Image 2" class="w-full h-auto">
   </figure>
   
   <figure class="text-center">
-    <img src="/figures/DJC_Trajectory_er_2_er2byer1_2.svg" alt="Image 3" class="w-full h-auto">
+    <img src="/figures/DJC_Trajectory_er_2_er2byer1_5.svg" alt="Image 3" class="w-full h-auto">
   </figure>
 </div>
 
 
 
-<v-drag pos="820,37,129,_">
+<v-drag pos="707,54,233,_">
 <div v-click="1"  class="text-3 text-left">
 $$
-\tilde{x} = x/a \quad \tilde{y} = y/a
+\tilde{t}_f = 10,000 \quad \quad \tilde{x} = x/a \quad \tilde{y} = y/a
 $$
 </div>
 </v-drag>
