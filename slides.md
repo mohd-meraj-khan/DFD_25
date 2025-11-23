@@ -28,7 +28,7 @@ slideNumber: true
 # Radiation Forces and Torque on Dielectric Janus Particles
 
 <div class="mt-4 text-center leading-relaxed">
-  <span class="text-l font-semibold">Mohd Meraj Khan<sup>a</sup></span>,
+  <span class="text-l font-semibold">Mohd. Meraj Khan<sup>a</sup></span>,
   <span class="text-l">Sumesh P. Thampi<sup>b</sup></span>
   and
   <span class="text-l">Anubhab Roy<sup>a</sup></span>
@@ -184,7 +184,7 @@ layout: default
 
 ---
 
-# Maxwell–LBM Computational Framework
+# Macroscopic Maxwell Equations and LBM Framework
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
@@ -318,6 +318,17 @@ $$
   <div v-click='6' class="m-2 text-2">
     Hauser and Verhey (2017)
   </div>
+  <div v-click='6' class="m-2 text-2">
+    Khan et al. (2024)
+  </div>
+</div>
+
+
+
+<div class="flex justify-between items-center text-3.5 mt-2 abs-bl mr-5 ">
+  <div class="m-2 text-2">
+    Griffiths (2013)
+  </div>
 </div>
 
 
@@ -339,9 +350,9 @@ $$
 layout: two-cols-header
 ---
 
-# Validation: PEC–Dielectric Benchmark
+# Conducting–Dielectric Janus Cylinder
 
-Scattering width validation
+
 
 ::left::
 
@@ -353,26 +364,14 @@ Scattering width validation
 
 
 
-<v-drag pos="439,110,471,_">
+
 <div v-click="1" class="mt-3 text-3.5">
 $$
 E_z^I (r, \phi) = \sum_{m = 0}^{\infty} \alpha_m (-j)^m J_m (k_0 r) \cos{ { m ( \phi - \phi_0) } }
 $$
 </div>
-</v-drag>
 
 
-
-<v-drag pos="446,238,500,_">
-<div v-click="1" class="mt-3 text-3.5">
-$$
-E_z^S (r, \phi) = \sum_{m = 0}^{\infty} \left[ B_m \cos{(m \phi)} + D_m \sin{(m \phi)} \right] H_m^{(1)} (k_0 r)
-$$
-</div>
-</v-drag>
-
-
-<v-drag pos="567,177,219,_">
 <div v-click="1"  class="text-3 text-left">
 $$
 \alpha_m =
@@ -382,8 +381,33 @@ $$
 \end{cases}
 $$
 </div>
-</v-drag>
 
+
+<div v-click="1" class="mt-3 text-3.5">
+$$
+E_z^S (r, \phi) = \sum_{m = 0}^{\infty} \left[ B_m \cos{(m \phi)} + D_m \sin{(m \phi)} \right] H_m^{(1)} (k_0 r)
+$$
+</div>
+
+
+
+<div v-click="2" class="mt-15 text-3.5">
+$$
+\int_0^{\pi} E_z^{\text{tot}} (\phi') K (\phi, \phi') d \phi' = F (\phi)
+$$
+</div>
+
+
+<div class="flex justify-between items-center text-3.5 mt-2 abs-br mr-5 ">
+  <div class="m-2 text-2">
+    Hurd and Sachdeva (1975)
+  </div>
+</div>
+
+
+
+
+<!--
 <v-drag pos="504,390,55,_">
 <div v-click="2"  class="text-3 text-left">
 $$
@@ -425,6 +449,7 @@ $$
 $$
 </div>
 </v-drag>
+-->
 
 
 <div class="abs-br m-2 text-3">
@@ -433,10 +458,12 @@ $$
 
 ---
 
-# Validation: PEC–Dielectric Benchmark
+# Radiation Force Landscapes
 
-Radiation force and torque validation
 
+<div class="text-center text-3.5 mb-0 mt-0">
+  Conducting–Dielectric Janus Cylinder
+</div>
 
 
 <div class="grid grid-cols-3 gap-0 mt-5 ml-15">
@@ -455,30 +482,35 @@ Radiation force and torque validation
 
 
 
-<div v-click="1" class="text-center text-4 mb-0 mt-0">
-  Percentage error
+<div v-click="1" class="text-center text-3.5 mb-0 mt-0">
+  Dielectric–Dielectric Janus Cylinder
 </div>
 
 <div v-click="1" class="grid grid-cols-3 gap-0 mt-0 ml-15">
   <figure class="text-center">
-    <img src="/figures/Fx_Hurd_Per_Err.svg" alt="Image 1" class="w-7/8 h-auto">
+    <img src="/figures/Fx_Janus_er_1.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
   
   <figure class="text-center">
-    <img src="/figures/Fy_Hurd_Per_Err.svg" alt="Image 2" class="w-7/8 h-auto">
+    <img src="/figures/Fy_Janus_er_1.svg" alt="Image 2" class="w-7/8 h-auto">
   </figure>
   
   <figure class="text-center">
-    <img src="/figures/Tz_Hurd_Per_Err.svg" alt="Image 3" class="w-7/8 h-auto">
+    <img src="/figures/Tz_Janus_er_1.svg" alt="Image 3" class="w-7/8 h-auto">
   </figure>
   
 </div>
+
+
+<!--
 
 <v-drag pos="-23,233,163,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic_PEC.svg" alt="Image 2" class="w-full h-auto">
 </figure>
 </v-drag>
+
+-->
 
 
 
@@ -520,6 +552,16 @@ $$
 
 
 
+<v-drag v-click="1" pos="29,387,53,_">
+<div class="text-3 text-left">
+$$
+\varepsilon_{r_1} = 1
+$$
+</div>
+</v-drag>
+
+
+
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
 </div>
@@ -528,21 +570,9 @@ $$
 
 # Radiation Force Landscapes
 
-<div class="grid grid-cols-3 gap-2 mt-8 ml-10">
-  <figure class="text-center">
-    <img src="/figures/Fx_Janus_er_1.svg" alt="Image 1" class="w-7/8 h-auto">
-  </figure>
-  
-  <figure class="text-center">
-    <img src="/figures/Fy_Janus_er_1.svg" alt="Image 2" class="w-7/8 h-auto">
-  </figure>
-  
-  <figure class="text-center">
-    <img src="/figures/Tz_Janus_er_1.svg" alt="Image 3" class="w-7/8 h-auto">
-  </figure>
-</div>
+Dielectric–Dielectric Janus Cylinder
 
-<div v-click="1" class="grid grid-cols-3 gap-2 mt-5 ml-10">
+<div class="grid grid-cols-3 gap-2 mt-8 ml-10">
   <figure class="text-center">
     <img src="/figures/Fx_Janus_er_2.svg" alt="Image 1" class="w-7/8 h-auto">
   </figure>
@@ -556,7 +586,22 @@ $$
   </figure>
 </div>
 
+<div v-click="1" class="grid grid-cols-3 gap-2 mt-5 ml-10">
+  <figure class="text-center">
+    <img src="/figures/Fx_Janus_er_5.svg" alt="Image 1" class="w-7/8 h-auto">
+  </figure>
+  
+  <figure class="text-center">
+    <img src="/figures/Fy_Janus_er_5.svg" alt="Image 2" class="w-7/8 h-auto">
+  </figure>
+  
+  <figure class="text-center">
+    <img src="/figures/Tz_Janus_er_5.svg" alt="Image 3" class="w-7/8 h-auto">
+  </figure>
+</div>
 
+
+<!--
 
 <div
   v-click="2"
@@ -578,6 +623,8 @@ $$
   </div>
 </div>
 
+-->
+
 
 <v-drag pos="745,19,195,_">
 <div class="text-3 text-left">
@@ -589,7 +636,7 @@ $$
 
 
 
-<v-drag pos="200,72,53,_">
+<v-drag pos="200,101,53,_">
 <div class="text-3 text-left">
 $$
 \langle \vec{F}_x \rangle
@@ -597,7 +644,7 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="479,73,53,_">
+<v-drag pos="481,105,53,_">
 <div class="text-3 text-left">
 $$
 \langle \vec{F}_y \rangle
@@ -605,7 +652,7 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="760,71,53,_">
+<v-drag pos="767,104,53,_">
 <div class="text-3 text-left">
 $$
 \langle \vec{M}_z \rangle
@@ -613,10 +660,10 @@ $$
 </div>
 </v-drag>
 
-<v-drag pos="21,143,60,_">
+<v-drag pos="17,177,60,_">
 <div class="text-3 text-left">
 $$
-\varepsilon_{r_1} = 1
+\varepsilon_{r_1} = 2
 $$
 </div>
 </v-drag>
@@ -624,13 +671,13 @@ $$
 <v-drag pos="22,378,53,_">
 <div v-click="1"  class="text-3 text-left">
 $$
-\varepsilon_{r_1} = 2
+\varepsilon_{r_1} = 5
 $$
 </div>
 </v-drag>
 
 
-
+<!--
 <v-drag pos="906,238,53,_">
 <div v-click="2"  class="text-3 text-left">
 $$
@@ -638,14 +685,16 @@ $$
 $$
 </div>
 </v-drag>
+-->
 
 
-
+<!--
 <v-drag pos="-21,225,139,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic.svg" alt="Image 2" class="w-full h-auto">
 </figure>
 </v-drag>
+-->
 
 
 
@@ -695,9 +744,48 @@ dielectric contrast ratio $\varepsilon_{r_2}/\varepsilon_{r_1}$
 </div>
 
 
-
-
 </div>
+
+
+
+
+
+<v-drag pos="541,450,40,_">
+<div v-click="2"  class="text-3 text-left">
+$$
+14
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="834,212,40,_">
+<div v-click="2"  class="text-3 text-left">
+$$
+40
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="542,212,40,_">
+<div v-click="2"  class="text-3 text-left">
+$$
+14
+$$
+</div>
+</v-drag>
+
+
+<v-drag pos="832,448,40,_">
+<div v-click="2"  class="text-3 text-left">
+$$
+32
+$$
+</div>
+</v-drag>
+
+
 
   
 
@@ -705,7 +793,6 @@ dielectric contrast ratio $\varepsilon_{r_2}/\varepsilon_{r_1}$
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
 </div>
-
 
 ---
 
@@ -866,7 +953,7 @@ $$
 
 
 <v-drag pos="707,54,233,_">
-<div v-click="1"  class="text-3 text-left">
+<div class="text-3 text-left">
 $$
 \tilde{t}_f = 10,000 \quad \quad \tilde{x} = x/a \quad \tilde{y} = y/a
 $$
@@ -960,6 +1047,14 @@ $$
 
 
 
-
-
-
+<div class="flex justify-between items-center text-3.5 mt-2 abs-br mr-5 ">
+  <div class="m-2 text-2">
+    Khan et al. (2024)
+  </div>
+  <div class="m-2 text-2">
+    Khan et al. (2025)
+  </div>
+  <div class="m-2 text-2">
+    Khan et al. (2025)
+  </div>
+</div>
