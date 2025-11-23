@@ -42,9 +42,13 @@ slideNumber: true
 
 
 
-<div class="text-l leading-tight text-center mt-5 mb-5">
-  78th APS Division of Fluid Dynamics
+<div class="mt-4 text-4 text-center ">
+  Indian Institute of Technology Madras, Chennai, India
 </div>
+
+
+
+
 
 
 
@@ -53,9 +57,14 @@ slideNumber: true
   <img src="/figures/IITM_Logo.png" alt="IIT Madras logo" class="h-24 w-24 opacity-90">
 </div>
 
-<div class="mt-4 text-4 text-center ">
-  Indian Institute of Technology Madras, Chennai, India
+
+
+
+<div class="text-l leading-tight text-center mt-5 mb-5">
+  78th APS Division of Fluid Dynamics
 </div>
+
+
 
 <!--
 <div class="mt-4 text-sm text-center ">
@@ -723,7 +732,7 @@ $$
 
 
 
-<p v-click="1" class="text-lg mt-4">Hydrodynamic Resistances</p>
+<p v-click="1" class="text-lg mt-4">Hydrodynamic Force and Torque</p>
 
 <div v-click="1" class="text-4">
 $$
@@ -941,7 +950,7 @@ $$
   <div class="flex flex-col items-center">
     <img src="/figures/QR_github.png" class="w-7/8 h-auto shadow-xl" />
     <p class="text-base opacity-80 text-center mt-4">
-      Scan for code and paper
+      Scan for code and preprint
     </p>
   </div>
 
@@ -953,82 +962,4 @@ $$
 
 
 
----
 
-## Analytical expression for a PEC-dielectric Janus cylinder
-
-Radiation drag
-
-<div class="text-3 text-left mt-15">
-$$
-\begin{aligned}
-        \tilde{F_x} &= \cos{\phi_0} \left[ \{ \Re (C_1 C_0^* ) - \Re (S_1 S_0^* ) + \Re ( C_1' C_0'^* ) - \Re ( S_1' S_0'^* ) \} + \sum_{n = 0}^{\infty} \{ \Re( C_{n} C_{n+1}^* ) + \Re ( S_{n} S_{n+1}^* )  + \Re (C_{n}' C_{n+1}'^* ) + \Re (S_{n}' S_{n+1}'^*) \} \right] \\
-        &\quad + \sin{\phi_0} \left[ \{ \Re (C_1 S_0^* ) + \Re ( C_0 S_1^* ) + \Re ( C_1' S_0'^* ) + \Re ( S_1' C_0'^* )  \} + \sum_{n = 0}^{\infty} \{ \Re ( S_{n+1} C_n^* ) -  \Re (S_{n} C_{n+1}^* ) + \Re (C_{n}' S_{n+1}'^*) - \Re ( S_{n}' C_{n+1}'^* ) \} \right] \\
-        &\quad - \frac{1}{(k_0 a)^2} \left[ \cos{\phi_0} \sum_{n = 0}^{\infty} n(n+1) \{ \Re (C_{n} C_{n+1}^* ) + \Re ( S_{n} S_{n+1}^* ) \}  
-                - \sin{\phi_0}  \sum_{n = 0}^{\infty} n(n+1) \{ \Re (C_{n+1} S_{n}^* ) - \Re ( C_{n} S_{n+1}^* ) \} \right] \\
-        &\quad + \sin{\phi_0} \frac{1}{k_0 a} \Re \left[ \{ C_0' S_1^* + S_0' C_1^* \} + \sum_{n = 1}^{\infty} n \{ (C_{n-1}' + C_{n+1}' ) S_n^* - ( S_{n-1}' + S_{n+1}' ) C_n^* \}  \right] \\
-        &\quad - \cos{\phi_0} \frac{1}{k_0 a} \Re \left[ \{ S_0' S_1^* - C_0' C_1^* \} - \sum_{n = 1}^{\infty} n \{ ( C_{n-1}' - C_{n+1}' ) C_n^* + ( S_{n-1}' - S_{n+1}' ) S_n^* \}  \right] 
-
-    \end{aligned}
-$$
-
-</div>
-
-
----
-
-## Analytical expression for a PEC-dielectric Janus cylinder
-
-Radiation lift
-
-<div class="text-3 text-left mt-15">
-
-$$
-\begin{aligned}
-        \tilde{F_y} &= - \sin{\phi_0}  \left[ \{ \Re (C_1 C_0^* ) - \Re (S_1 S_0^* ) + \Re ( C_1' C_0'^* ) - \Re ( S_1' S_0'^* ) \} + \sum_{n = 0}^{\infty} \{ \Re( C_{n} C_{n+1}^* ) + \Re ( S_{n} S_{n+1}^* )  + \Re (C_{n}' C_{n+1}'^* ) + \Re (S_{n}' S_{n+1}'^*) \} \right] \\
-        &\quad + \cos{\phi_0}  \left[ \Re (C_1 S_0^* ) + \Re ( C_0 S_1^* ) + \Re ( C_1' S_0'^* ) + \Re ( S_1' C_0'^* ) +  \sum_{n = 0}^{\infty} \{ \Re ( S_{n+1} C_n^* ) -  \Re (S_{n} C_{n+1}^* ) + \Re (C_{n}' S_{n+1}'^*) - \Re ( S_{n}' C_{n+1}'^* ) \}  \right]  \\
-        &\quad + \frac{1}{(k_0 a)^2} \left[\sin{\phi_0} \sum_{n = 0}^{\infty} n(n+1) \{ \Re (C_{n} C_{n+1}^* ) + \Re ( S_{n} S_{n+1}^* ) \}  
-        +  \cos{\phi_0} \sum_{n = 0}^{\infty} n(n+1) \{ \Re (C_{n+1} S_{n}^* ) - \Re ( C_{n} S_{n+1}^* ) \} \right] \\
-        &\quad + \cos{\phi_0} \frac{1}{k_0 a} \Re \left[ \{ C_0' S_1^* + S_0' C_1^* \} + \sum_{n = 1}^{\infty} n \{ (C_{n-1}' + C_{n+1}' ) S_n^* - ( S_{n-1}' + S_{n+1}' ) C_n^* \}  \right] \\
-        &\quad + \sin{\phi_0}  \frac{1}{k_0 a} \Re \left[ \{ S_0' S_1^* - C_0' C_1^* \} - \sum_{n = 1}^{\infty} n \{ ( C_{n-1}' - C_{n+1}' ) C_n^* + ( S_{n-1}' - S_{n+1}' ) S_n^* \}  \right]
-
-    \end{aligned}
-$$
-
-
-</div>
-
-
----
-
-## Analytical expression for a PEC-dielectric Janus cylinder
-
-Radiation torque
-
-<div class="text-3 text-left mt-5">
-
-$$
-\begin{aligned}
-        \tilde{M_z} &= \frac{1}{k_0 a} \sum_{n = 1}^{\infty} n \Re \left[ S_n' C_n^* - C_n' S_n^* \right]
-    \end{aligned}
-$$
-
-
-$$
-\begin{gather*}
-        C_m = \left[ \alpha_m (-j)^m J_m (k_0 a) \cos{(m \phi_0)} + B_m H_m^{(1)} (k_0 a) \right], \\
-        S_m = \left[ \alpha_m (-j)^m J_m (k_0 a) \sin{(m \phi_0)} + D_m H_m^{(1)} (k_0 a) \right], \\
-        C_m' = \left[ \alpha_m (-j)^m J_m' (k_0 a) \cos{(m \phi_0)} + B_m H_m^{(1)'} (k_0 a) \right], \\
-        S_m' = \left[ \alpha_m (-j)^m J_m' (k_0 a) \sin{(m \phi_0)} + D_m H_m^{(1)'} (k_0 a) \right].
-    \end{gather*}
-$$
-
-
-$$
-\begin{aligned}
-    B_m = \frac{\alpha_m}{2 \pi H_m^{(1)} (k_0 a) } \int_0^{\pi} E_z^{\text{tot}} (\phi) \cos(m \phi) \, d\phi  - \frac{\alpha_m (-j)^m J_m (k_0 a) \cos(m \phi_0)}{H_m^{(1)} (k_0 a)}, \\
-    D_m = \frac{1}{\pi H_m^{(1)} (k_0 a) } \int_0^{\pi} E_z^{\text{tot}} (\phi) \sin(m \phi) \, d\phi  - \frac{2 (-j)^m J_m (k_0 a) \sin(m \phi_0)}{H_m^{(1)} (k_0 a)}. 
-\end{aligned}
-$$
-
-</div>
