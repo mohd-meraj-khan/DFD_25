@@ -178,6 +178,12 @@ layout: default
 
 
 
+<div v-click="1" class="mt-4 p-3 text-sm bg-gray-100 border-l-4  rounded">
+   The asymmetry of the particle breaks reflectional symmetry, resulting in radiation-induced lift and torque.
+</div>
+
+
+
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
 </div>
@@ -502,15 +508,21 @@ $$
 </div>
 
 
-<!--
 
-<v-drag pos="-23,233,163,_">
+
+<v-drag pos="-23,136,148,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic_PEC.svg" alt="Image 2" class="w-full h-auto">
 </figure>
 </v-drag>
 
--->
+<v-drag v-click="1" pos="-24,325,148,_">
+<figure class="text-center">
+  <img src="/figures/Janus_schematic.svg" alt="Image 2" class="w-full h-auto">
+</figure>
+</v-drag>
+
+
 
 
 
@@ -552,7 +564,7 @@ $$
 
 
 
-<v-drag v-click="1" pos="29,387,53,_">
+<v-drag v-click="1" pos="23,445,53,_">
 <div class="text-3 text-left">
 $$
 \varepsilon_{r_1} = 1
@@ -688,13 +700,13 @@ $$
 -->
 
 
-<!--
-<v-drag pos="-21,225,139,_">
+
+<v-drag pos="-21,252,139,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic.svg" alt="Image 2" class="w-full h-auto">
 </figure>
 </v-drag>
--->
+
 
 
 
@@ -843,9 +855,9 @@ $$
 
 <div v-click="2" class="flex flex-col  h-full">
 
-<div class="text-4">
+<div class="text-3.5">
 $$
-\tilde{t}_f = 10,000 \quad \quad\tilde{t} = t/T_0 \quad \quad   T_0 = \frac{2 c }{\pi} \frac{\eta}{I}
+U_0 = \frac{\pi}{2c \eta}Ia \quad \quad \Omega_0 = \frac{\pi}{2c \eta}I \quad \quad   T_0 = \frac{2 c }{\pi} \frac{\eta}{I}
 $$
 </div>
 
@@ -872,11 +884,21 @@ $$
 </v-drag>
 
 
-<v-drag v-click="1" pos="809,-5,181,_">
+<v-drag v-click="1" pos="825,-8,165,_">
 <figure class="text-center">
   <img src="/figures/Janus_schematic_PEC.svg" alt="Image 2" class="w-full h-auto">
 </figure>
 </v-drag>
+
+
+<v-drag v-click="2" pos="668,196,91,_">
+<div  class="text-3 text-left">
+$$
+\tilde{t}_f = 10,000 
+$$
+</div>
+</v-drag>
+
 
 
 
