@@ -902,6 +902,15 @@ $$
 
 
 
+<div v-click="1" class="flex justify-between items-center text-3.5 mt-2 abs-bl mr-5 ">
+  <div class="m-2 text-2">
+    Batchelor (1970)
+  </div>
+</div>
+
+
+
+
 
 <div class="abs-br m-2 text-3">
   <SlideCurrentNo />
