@@ -76,7 +76,7 @@ slideNumber: true
 
 
 
-<div class="abs-br m-1.5 text-2">
+<div class="abs-br m-1.5 text-2.5">
   Background image: astronomy.swin.edu.au
 </div>
 
