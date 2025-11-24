@@ -93,7 +93,7 @@ layout: default
     <img src="/figures/comet_tail.jpg" class="w-[75%] h-auto rounded shadow" />
     <figcaption class="text-3 mt-3 leading-tight text-center">
       Comet tail (radiation forces in nature)
-      <div class="text-2 opacity-70 mt-1">(Source: astronomy.swin.edu.au)</div>
+      <div class="text-2.5 opacity-70 mt-1">(Source: astronomy.swin.edu.au)</div>
     </figcaption>
   </figure>
 
@@ -104,7 +104,7 @@ layout: default
     </video>
     <figcaption class="text-3 mt-3 leading-tight text-center">
       Optical trapping using radiation forces
-      <div class="text-2 opacity-70 mt-1">Ashkin & Dziedzic (1989)</div>
+      <div class="text-2.5 opacity-70 mt-1">Ashkin & Dziedzic (1989)</div>
     </figcaption>
   </figure>
 
@@ -120,7 +120,7 @@ layout: default
     </video>
     <figcaption class="text-3 mt-3 leading-tight text-center">
       Radiation forces enabling particle manipulation
-      <div class="text-2 opacity-70 mt-1">Ashkin & Dziedzic (1989)</div>
+      <div class="text-2.5 opacity-70 mt-1">Ashkin & Dziedzic (1989)</div>
     </figcaption>
   </figure>
 
@@ -318,13 +318,13 @@ $$
 
 
 <div class="flex justify-between items-center text-3.5 mt-2 abs-br mr-5 ">
-  <div v-click='3' class="m-2 text-2">
+  <div v-click='3' class="m-2 text-2.5">
     Timm Kruger (2017)
   </div>
-  <div v-click='6' class="m-2 text-2">
+  <div v-click='6' class="m-2 text-2.5">
     Hauser and Verhey (2017)
   </div>
-  <div v-click='6' class="m-2 text-2">
+  <div v-click='6' class="m-2 text-2.5">
     Khan et al. (2024)
   </div>
 </div>
@@ -332,7 +332,7 @@ $$
 
 
 <div class="flex justify-between items-center text-3.5 mt-2 abs-bl mr-5 ">
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Griffiths (2013)
   </div>
 </div>
@@ -405,7 +405,7 @@ $$
 
 
 <div class="flex justify-between items-center text-3.5 mt-2 abs-br mr-5 ">
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Hurd and Sachdeva (1975)
   </div>
 </div>
@@ -903,7 +903,7 @@ $$
 
 
 <div v-click="1" class="flex justify-between items-center text-3.5 mt-2 abs-bl mr-5 ">
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Batchelor (1970)
   </div>
 </div>
@@ -1038,7 +1038,7 @@ $$
 
 ---
 
-# Thank You
+# Thank You!
 
 <div class="grid grid-cols-2 gap-12 items-center mt-10">
 
@@ -1079,13 +1079,13 @@ $$
 
 
 <div class="flex justify-between items-center text-3.5 mt-2 abs-br mr-5 ">
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Khan et al. (2024)
   </div>
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Khan et al. (2025)
   </div>
-  <div class="m-2 text-2">
+  <div class="m-2 text-2.5">
     Khan et al. (2025)
   </div>
 </div>
